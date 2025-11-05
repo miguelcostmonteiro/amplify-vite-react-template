@@ -35,7 +35,6 @@ function App() {
             
             {todo.content}{" "}
             <button onClick={() => deleteTodo(todo.id)}>Delete</button>
-            <button onClick={signOut}>Sign out</button>
           </li>
         ))}
       </ul>
@@ -46,6 +45,7 @@ function App() {
           Review next step of this tutorial.
         </a>
       </div>
+      <button onClick={signOut}>Sign out</button>
     </main>
   );
 }
